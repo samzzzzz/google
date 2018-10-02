@@ -1,29 +1,26 @@
 
+		
 		* {
- 		 box-sizing: border-box;
-	     margin: 0px;
-		 padding: 0px;
+		 padding: 0px; 
+		 flex-direction: column;
 		}		
-		.container {
-			display: flex;
-			justify-content: space-between;
-			flex-direction: column;
-			
-			min-height: 100%;
-			min-width: 100%;  
-			}
+		
 		body {
-			min-height: 100%;
-			margin: 0px;
-			padding: 0px;
-			display: flex; 
-		}
+  min-height: 100vh;
+  display: flex;
+}
 		.header {
 			display: flex;
+
 			justify-content: flex-end;
 			
 		}
+		.link {margin-left: auto;
+		line-height: 40px;
+
+		}
 		a {
+		
 		color: rgb(39,39,39);
 		text-decoration: none;
 		font-family: arial, sans-seriph;
@@ -38,14 +35,19 @@
 		text-decoration: underline;
 		}
 
-		.connexion input {
+		.link #connexion{
+
 		background-color: rgb(69,134,236);
 		color: white;
-		width: 100px;
-		height: 30px;
+		width: 70px;
+		height: 30px
+		padding-right: 10px;
 		border: none;
+		text-align: center;
 		border-radius: 2px;
-			font-size: 12px;
+		font-size: 12px;
+		min-width: 40px;
+    	 padding: 10px;
 		}
 
 		.mid {
@@ -67,16 +69,6 @@
 		 width: auto;
  
 		}
-		.searchbar{
-		display: flex;
-		align-content: center;
-			justify-content: center;
-		background-color: #ffffff ;
-		font-size:13px;
-		border-color: #dddddd;
-		border-width: 800px;
-		}
-
 		
 		.searchbar input[type=text] {
 		 display: flex;
@@ -102,53 +94,40 @@
 
 		}
 
-		#bar {
-	padding-bottom: 30px;
-	padding-top: 0px;
-}
-		.boutton input {
-		width: 500px;
-	height: 40px;
-	color: black;
-	font-size: 20px;
-	z-index: 1;
-	border: none;
-    padding: 10px;
-    margin: 10px;
-    border:1px solid #eaeaea;
-    outline:none;
+		.searchbar {
+		padding-bottom: 30px;
+		padding-top: 0px;
 		}
 		.boutton input {
-		 background-color: #f2f2f2;
+		color: black;
+		border: none;
+
+    	outline:none;
+    	 background-color: #f2f2f2;
 		 border: 1px solid #f2f2f2;
 		 font-family: arial,sans-serif;
-		 margin: 11px 4px;
     	 min-width: 54px;
-    	 padding: 0 16px;
-    	 text-align: center;
-    	 border-radius: 2px;
+    	 padding: 14px;
     	 color: #757575;
-    	 height: 38px;
-    	 width: 150px;
     	 font-weight: bold;
-  		 font-size: 13px;
 		}
+		
+		#footer {
+	display: flex;
+	flex-direction: row;
+	order: 3;
+	height: 40px;
+	background-color: rgb(242,242,242);
+	color: rgb(102,102,102);
+	text-decoration: none;
+}
 
-		.footer {
-		display: flex;
-		flex-direction: row;
-		order: 3;
-		height: 40px;
-		background-color: rgb(242,242,242);
-		color: rgb(102,102,102);
-		text-decoration: none;
-		}
-		.droi<<te{
-		margin-left: auto;
-		line-height: 40px;
-		}
-
-
-	.gauche {
+#footerr {
+	margin-left: auto;
 	line-height: 40px;
-	
+}
+
+
+#footerl {
+	line-height: 40px;
+}
